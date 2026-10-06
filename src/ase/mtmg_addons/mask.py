@@ -34,4 +34,8 @@ class Mask(np.ndarray):
         return locations
 
     def decode_indices(self, indices: list[int] | int):
+<<<<<<< HEAD
         return self.indices()[indices]"
+=======
+        return self.indices()[indices]
+>>>>>>> 5558597 (Initial commit of pre-existing functions and classes)
