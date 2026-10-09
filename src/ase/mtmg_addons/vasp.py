@@ -8,7 +8,7 @@ def regular_kpoint_mesh(cell, scale:int=1, kpts_max:int|None=None):
 
     if kpts_max and kpts_max < sampling.max():
         kpts = np.round(sampling/sampling.max()*kpts_max)
-        kpts = np.array([k if k > 1 else 1 for k in kpts])
+        kpts = np.array([k if k > 1 else 1 for k in kpts], dtype=int)
     else:
         kpts = sampling
 
